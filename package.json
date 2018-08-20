@@ -1,6 +1,6 @@
 {
     "name": "saturnjs",
-    "version": "1.8.1",
+    "version": "0.0.1",
     "description": "Pure JavaScript Saturnjs library for node.js and browsers.",
     "browser": {
         "ws": false,
@@ -34,12 +34,7 @@
         "type": "git",
         "url": "git+https://github.com/saturnjs/saturnjs.git"
     },
-    "author": "Sigve Kvalsvik <saturnjsblocks@gmail.com> (https://github.com/svk31)",
-    "contributors": [
-        "James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)",
-        "Daniel Larimer <dan@cryptonomex.com> (https://github.com/bytemaster/)",
-        "Valentine Zavgorodnev <valentine.zavgorodnev@gmail.com> (https://github.com/valzav/)"
-    ],
+    "author": "Saturn-chain",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/saturnjs/saturnjs/issues"
@@ -61,7 +56,7 @@
         "event-emitter": "0.3.5",
         "immutable": "3.8.2",
         "safe-buffer": "^5.1.2",
-        "saturnjs-ws": "file:../saturnjs-ws/saturnjs-ws-1.5.5.tgz",
+        "saturnjs-ws": "file:../saturnjs-ws/saturnjs-ws-0.0.1.tgz",
         "secure-random": "1.1.1"
     },
     "devDependencies": {
