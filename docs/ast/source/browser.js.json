@@ -686,9 +686,9 @@
                       "line": 8,
                       "column": 16
                     },
-                    "identifierName": "bitshares_ws"
+                    "identifierName": "saturnjs_ws"
                   },
-                  "name": "bitshares_ws"
+                  "name": "saturnjs_ws"
                 },
                 "value": {
                   "type": "CallExpression",
@@ -1982,7 +1982,7 @@
         "postfix": false,
         "binop": null
       },
-      "value": "bitshares_ws",
+      "value": "saturnjs_ws",
       "start": 321,
       "end": 333,
       "loc": {

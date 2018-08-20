@@ -1,7 +1,7 @@
 {
-    "name": "bitsharesjs",
+    "name": "saturnjs",
     "version": "1.8.1",
-    "description": "Pure JavaScript Bitshares library for node.js and browsers.",
+    "description": "Pure JavaScript Saturnjs library for node.js and browsers.",
     "browser": {
         "ws": false,
         "crypto": false
@@ -20,8 +20,8 @@
         "postbuild": "npm run browserify && npm run build-es",
         "build:watch": "babel lib -d dist --watch",
         "prebrowserify": "mkdirp build",
-        "browserify": "cross-env NODE_ENV=production browserify --full-paths dist/browser.js --standalone bitshares_js -o build/bitsharesjs.js -d",
-        "postbrowserify": "cross-env NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --output build/bitsharesjs.min.js -- build/bitsharesjs.js",
+        "browserify": "cross-env NODE_ENV=production browserify --full-paths dist/browser.js --standalone saturnjs_js -o build/saturnjs.js -d",
+        "postbrowserify": "cross-env NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --output build/saturnjs.min.js -- build/saturnjs.js",
         "prepublish": "npm run build",
         "doc": "esdoc -c esdoc.json",
         "example:transfer": "babel-node examples/transfer",
@@ -32,9 +32,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/bitshares/bitsharesjs.git"
+        "url": "git+https://github.com/saturnjs/saturnjs.git"
     },
-    "author": "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
+    "author": "Sigve Kvalsvik <saturnjsblocks@gmail.com> (https://github.com/svk31)",
     "contributors": [
         "James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)",
         "Daniel Larimer <dan@cryptonomex.com> (https://github.com/bytemaster/)",
@@ -42,7 +42,7 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/bitshares/bitsharesjs/issues"
+        "url": "https://github.com/saturnjs/saturnjs/issues"
     },
     "engines": {
         "node": ">= 6.0.0"

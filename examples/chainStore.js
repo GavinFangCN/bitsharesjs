@@ -1,7 +1,7 @@
 import {Apis} from "saturnjs-ws";
 import {ChainStore} from "../lib";
 
-Apis.instance("wss://eu.nodes.bitshares.ws", true).init_promise.then(res => {
+Apis.instance("wss://eu.nodes.saturnjs.ws", true).init_promise.then(res => {
     console.log("connected to:", res[0].network);
     ChainStore.init(false).then(() => {
         ChainStore.subscribe(updateState);

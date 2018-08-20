@@ -1,18 +1,18 @@
-# BitsharesJS (bitsharesjs)
+# saturnjs (saturnjs)
 
-Pure JavaScript Bitshares library for node.js and browsers. Can be used to construct, sign and broadcast transactions in JavaScript, and to easily obtain data from the blockchain via public apis.
+Pure JavaScript Saturnjs library for node.js and browsers. Can be used to construct, sign and broadcast transactions in JavaScript, and to easily obtain data from the blockchain via public apis.
 
 Most of this code was written by [jcalfee](https://github.com/jcalfee), my work was mostly just repackaging to a discrete npm package.
 
-[![npm version](https://img.shields.io/npm/v/bitsharesjs.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs)
-[![npm downloads](https://img.shields.io/npm/dm/bitsharesjs.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs)
+[![npm version](https://img.shields.io/npm/v/saturnjs.svg?style=flat-square)](https://www.npmjs.com/package/saturnjs)
+[![npm downloads](https://img.shields.io/npm/dm/saturnjs.svg?style=flat-square)](https://www.npmjs.com/package/saturnjs)
 
 
 ## Setup
 
 This library can be obtained through npm:
 ```
-npm install bitsharesjs
+npm install saturnjs
 ```
 
 ## Usage
@@ -56,9 +56,9 @@ The ChainStore has several useful methods to retrieve, among other things, objec
 
 ```
 import {Apis} from "saturnjs-ws";
-var {ChainStore} = require("bitsharesjs");
+var {ChainStore} = require("saturnjs");
 
-Apis.instance("wss://bitshares.openledger.info/ws", true).init_promise.then((res) => {
+Apis.instance("wss://saturnjs.openledger.info/ws", true).init_promise.then((res) => {
     console.log("connected to:", res[0].network);
     ChainStore.init().then(() => {
         ChainStore.subscribe(updateState);
@@ -80,7 +80,7 @@ The ECC library contains all the crypto functions for private and public keys as
 As a quick example, here's how to generate a new private key from a seed (a brainkey for example):
 
 ```
-var {PrivateKey, key} = require("bitsharesjs");
+var {PrivateKey, key} = require("saturnjs");
 
 let seed = "THIS IS A TERRIBLE BRAINKEY SEED WORD SEQUENCE";
 let pkey = PrivateKey.fromSeed( key.normalize_brainKey(seed) );

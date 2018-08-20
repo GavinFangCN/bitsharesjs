@@ -5,9 +5,9 @@ import {TransactionBuilder} from "../../lib";
 describe("TransactionBuilder", () => {
     // Connect once for all tests
     before(function() {
-        /* use wss://bitshares.openledger.info/ws if no local node is available */
+        /* use wss://saturnjs.openledger.info/ws if no local node is available */
         return new Promise(function(resolve, reject) {
-            Apis.instance("wss://bitshares.openledger.info/ws", true)
+            Apis.instance("wss://saturnjs.openledger.info/ws", true)
                 .init_promise.then(resolve)
                 .catch(reject);
         });
