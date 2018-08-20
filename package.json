@@ -23,7 +23,7 @@
         "browserify": "cross-env NODE_ENV=production browserify --full-paths dist/browser.js --standalone bitshares_js -o build/bitsharesjs.js -d",
         "postbrowserify": "cross-env NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --output build/bitsharesjs.min.js -- build/bitsharesjs.js",
         "precommit": "pretty-quick --staged && npm run test",
-        "prepublish": "npm run build && npm run test",
+        "prepublish": "npm run build",
         "doc": "esdoc -c esdoc.json",
         "example:transfer": "babel-node examples/transfer",
         "example:feed": "babel-node examples/publishFeed",
@@ -52,7 +52,6 @@
     "jsnext:main": "./es/index.js",
     "dependencies": {
         "bigi": "1.4.2",
-        "bitsharesjs-ws": "1.5.4",
         "bs58": "4.0.1",
         "bytebuffer": "5.0.1",
         "create-hash": "1.2.0",
@@ -63,6 +62,7 @@
         "event-emitter": "0.3.5",
         "immutable": "3.8.2",
         "safe-buffer": "^5.1.2",
+        "saturnjs-ws": "file:../saturnjs-ws/saturnjs-ws-1.5.5.tgz",
         "secure-random": "1.1.1"
     },
     "devDependencies": {

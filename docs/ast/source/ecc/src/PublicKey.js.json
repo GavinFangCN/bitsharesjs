@@ -735,10 +735,10 @@
             }
           },
           "extra": {
-            "rawValue": "bitsharesjs-ws",
-            "raw": "\"bitsharesjs-ws\""
+            "rawValue": "saturnjs-ws",
+            "raw": "\"saturnjs-ws\""
           },
-          "value": "bitsharesjs-ws"
+          "value": "saturnjs-ws"
         }
       },
       {
@@ -24981,7 +24981,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "bitsharesjs-ws",
+      "value": "saturnjs-ws",
       "start": 237,
       "end": 253,
       "loc": {
